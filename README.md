@@ -6,8 +6,8 @@ Note: This will not include any code, just ideas and represent the core of UPM a
 I hate that there is 1,000 package managers. I designed UPM to take the best ideas from all of them, and add a couple ideas.
 
 ## UPM Terminology
-Specific Terminology:
-Argument: A command line argument used in the command (Package, DDOs, Etc)
+Specific Terminology: \
+Argument: A command line argument used in the command (Package, DDOs, Etc).
 DDO: Short for "Double Dash Opions". For example "dpkg **--install** ..." or "apt **--fix-missing** install". 
 Shorthand DDO: The single dash options like "-v" for verbose and "-i" for install (on some PMs).
 
