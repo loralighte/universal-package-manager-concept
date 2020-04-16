@@ -1,0 +1,26 @@
+include = "outer.UPMFile"
+
+# You can have as many repo sources as you wish.
+repo-src = "https://example.com/" 
+repo-src = "/bin/some-repo-file_for-example/etc/apt/sources.list.d/on-ubuntu/"
+
+# Defaults
+def = "--rolling" # Will remove the need to specifiy --rolling. --stable is still possible just must be specified.
+def = "--auto-update" # Will always auto update (if specified)
+
+# Aliasing 
+# Not accurate to other package managers.
+alias -Sy = "install" # Allows -Sy to be used to install
+alias -Sss = "update" # Allows -Sss to update packages 
+
+# Scripting
+# Make custom scripts to do what the UPM system can't already do!
+
+script -[
+  # Do some kind of UPM script here
+]
+
+# alternatively, you can allow binaries and CLI stuff to run scripts for UPM.
+script = "./a.out" 
+script = "python3 ./my_scripts.py"
+# Note: The scripts must be in the proper directory, or a directory referenced from root.
